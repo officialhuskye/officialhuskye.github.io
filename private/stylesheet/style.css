@@ -132,7 +132,7 @@ html, body {
         height: 26vh;
     }
   }
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-width: 480px) {
        .navigation > ul > li > a {
         margin: 0.6em;
     }
@@ -151,7 +151,7 @@ html, body {
     }
   }
     }
-    @media only screen and (device-width: 768px) {
+    @media only screen and (min-width: 200px) and (max-width: 767px) {
        .navigation > ul > li > a {
         margin: 0.6em;
     }
