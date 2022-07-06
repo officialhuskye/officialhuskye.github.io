@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&family=Teko&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+}
+
+html, body {
+    background: radial-gradient(transparent, rgb(126, 126, 126)), rgb(255, 255, 255);
+    height: 100vh;
+    font-family: 'Sawarabi Mincho', serif;
+    font-size: 24pt;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation > ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.navigation > ul > li > a {
+    margin-left: 2em;
+    font-family: 'Teko', sans-serif;
+}
+
+.navigation > ul > li > a:hover {
+    color: #FFF;
+}
+
+.article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+}
+
+.songs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+.song {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.song:hover .song-drop-list{
+    display: flex;  
+}
+
+.song-drop-list {
+    width: 100%;
+    display: none;
+    justify-content: space-evenly;
+}
+
+.song-drop-list > li > a:hover{
+    color: red;
+}
+
+.eq{
+    font-family: 'Teko', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 85vh;
+}
+
+#list {
+    font-family: 'Teko', sans-serif;
+    text-align: left;
+}
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0);
+    border-radius: 25px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
+  @media only screen and (max-width: 390px) {
+    .navigation > ul > li > a {
+        margin: 0.6em;
+    }
+    .song > h2 {
+    font-size: 14pt;
+    }
+
+    .song-drop-list{
+        display: flex;
+        font-size: 18pt;
+    }
+
+    #yt {
+        width: 96%;
+        height: 26vh;
+    }
+  }
