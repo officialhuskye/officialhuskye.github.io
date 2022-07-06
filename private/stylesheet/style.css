@@ -151,7 +151,7 @@ html, body {
     }
   }
     }
-    @media only screen and (min-width: 200px) and (max-width: 767px) {
+    @media only screen and (min-width: 1px) and (max-width: 767px) {
        .navigation > ul > li > a {
         margin: 0.6em;
     }
